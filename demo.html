@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://wallpapers.com/images/featured/office-desk-a1yivbaxal92jim2.jpg);
+            background-size: cover;
+        }
+        .details{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }  
+        .header{
+            align-content: center;
+            text-align: center;
+        }
+        #field{
+            width: 600px;
+            height: 400px;
+            background-color: whitesmoke;
+            border: 3px solid orange;
+            padding: 20px;
+        }
+        .line{
+            height: 2px;
+            color: gray;
+        }
+        button{
+            width: 10cm;
+        }
+        #submit:hover{
+            color: white;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="details"><fieldset id="field">
+        <div class="header">
+  <h1>Book a call</h1>
+  <p>Book a call slot and our representative will call you within 1hr of selected time</p>
+  <hr class="line">
+        </div>
+<form id="myform">
+    
+    <label for="name">Name:</label><br>
+    <input type="text" name="username" id="name" size="100" required>
+    <br><br>
+    <label for="email">E-mail:</label><br>
+    <input type="email" name="email" id="email" size="100" required>
+    <br><br>
+    <label for="phno">Phone:</label><br>
+    <input type="tel" name="phno" id="phno" size="100" required placeholder="91-1234567890">
+    <br><br>
+    <label for="date">Time for Call:</label><br>
+    <input type="date" name="date" id="date" size="100" style="width: 350px;" required>
+    <input type="time" name="time" id="time" size="100" style="width: 340px;" required>
+   <br><br>
+    <button type="submit" id="submit" style="width: 700px; background-color: orange; height: 40px;">Get a Call</button>
+</form>
+</fieldset></div>
+<script src="index.js"></script>
+</body>
+
+</html>
+
